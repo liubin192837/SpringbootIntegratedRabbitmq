@@ -8,6 +8,7 @@ https://github.com/liubin192837/SpringbootIntegratedRabbitmq/blob/master/src/mai
         return BindingBuilder.bind(queueFanoutOne()).to(fanoutExchange());
 
     }
+    
     //topic 模式,明确声明key
     @Bean
     Binding bindingOne() {
