@@ -1,5 +1,5 @@
 # SpringbootIntegratedRabbitmq
-
+//模式
 1). topic 和 fanout模式的差别是fanout,不明确生命key:
 
 https://github.com/liubin192837/SpringbootIntegratedRabbitmq/blob/master/src/main/java/com/mqSpring/mq/mode/Config.java
@@ -23,3 +23,7 @@ https://github.com/liubin192837/SpringbootIntegratedRabbitmq/blob/master/src/mai
 
 
 当然使用mq的客户端代码需要生命type来选择哪种模式,和spring结合, 非"Hello World!" 和 Work Queues 模式则要选择对应的exchange(TopicExchange/FanoutExchange)实现类.
+
+//ack
+1) setConfirmCallback收到回执,只是说明找到对应的queue,并发送了,并不是表示这个消息真的处理了.自动模式就可体现出这点
+

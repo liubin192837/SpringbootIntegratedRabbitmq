@@ -22,7 +22,7 @@ public class MqApplicationTests {
 	@Test
 	public void contextLoads() {
 		//hello
-		//sender.send();
+		sender.send();
 		//topic
 		senderTopic.sendOne();
 		senderTopic.sendTwo();
